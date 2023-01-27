@@ -5,7 +5,7 @@ open class Pony(name: String, gewicht: Double, alter: Double, geschlecht: String
         println("Wiehiehie")
     }
 
-    fun reiten(besucher: Besucher) {
+    open fun reiten(besucher: Besucher) {
 
         if (alter >= 1 && besucher.alterBesucher >=6)
             println("$name wird jetzt von ${besucher.nameBesucher} geritten.")

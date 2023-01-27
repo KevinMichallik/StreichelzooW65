@@ -12,14 +12,14 @@ open class Streichelzoo {
         this.tiereImZoo.add(5, Pony("Frida",160.0, 3.0, "weiblich", 22.0))
     }
 
-    fun freuen(besucher: Besucher){
+    open fun freuen(besucher: Besucher){
         println("${besucher.nameBesucher} hat den Zoo betreten.")
         for (tiereImZoo in tiereImZoo){
             tiereImZoo.geraeusche()
         }
     }
 
-    fun fuetternAlleTiere(besucher: Besucher){
+    open fun fuetternAlleTiere(besucher: Besucher){
         for (tiereImZoo in tiereImZoo)
             println("${besucher.nameBesucher} füttert ${tiereImZoo.name}.")
     }
